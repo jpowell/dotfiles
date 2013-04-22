@@ -30,7 +30,7 @@ export PS1="\
 $FONT_BOLD\$(date +%H:%M) \
 $COLOR_ORANGE\u \
 $COLOR_WHITE\w \
-$COLOR_RED\$(parse_git_branch) \
+$COLOR_RED(\$(parse_git_branch)) \
 $COLOR_RESET\n$ "
 
 unset FONT_BOLD COLOR_ORANGE COLOR_RED COLOR_WHITE COLOR_WHITE
@@ -49,7 +49,7 @@ alias hidden_off='defaults write com.apple.finder AppleShowAllFiles FALSE; killa
 
 # Functions
 parse_git_branch() {
-  git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/\[\1\]/'
+  git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/\1/'
 }
 gup() {
  echo "updating to latest blessed"
