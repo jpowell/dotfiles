@@ -27,11 +27,11 @@ COLOR_WHITE='\[\e[0;37m\]'
 COLOR_RESET='\[\e[0m\]'
 
 export PS1="\
-${FONT_BOLD}$(date +%H:%M) \
-${COLOR_ORANGE}\u \
-${COLOR_WHITE}\w \
-${COLOR_RED}$(parse_git_branch) \
-${COLOR_RESET}\n$ "
+$FONT_BOLD$(date +%H:%M) \
+$COLOR_ORANGE\u \
+$COLOR_WHITE\w \
+$COLOR_RED\$(parse_git_branch) \
+$COLOR_RESET\n$ "
 
 unset FONT_BOLD COLOR_ORANGE COLOR_RED COLOR_WHITE COLOR_WHITE
 
