@@ -20,10 +20,6 @@ export PATH="/usr/local/bin:$PATH"
 export PATH="$HOME/bin:$PATH"
 
 # Prompt
-parse_git_branch() {
-  git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/\[\1\]/'
-}
-
 FONT_BOLD='\[\e[1m\]'
 COLOR_ORANGE='\[\e[0;33m\]'
 COLOR_RED='\[\e[0;31m\]'
@@ -51,6 +47,10 @@ alias update_locate='sudo /usr/libexec/locate.updatedb'
 alias hidden_on='defaults write com.apple.finder AppleShowAllFiles TRUE; killall Finder'
 alias hidden_off='defaults write com.apple.finder AppleShowAllFiles FALSE; killall Finder'
 
+# Functions
+parse_git_branch() {
+  git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/\[\1\]/'
+}
 gup() {
  echo "updating to latest blessed"
  git fetch origin
