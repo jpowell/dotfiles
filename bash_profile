@@ -35,6 +35,11 @@ $COLOR_RESET\n$ "
 
 unset FONT_BOLD COLOR_ORANGE COLOR_RED COLOR_WHITE COLOR_WHITE
 
+export RUBY_GC_MALLOC_LIMIT=50000000
+export RUBY_HEAP_MIN_SLOTS=500000
+export RUBY_HEAP_SLOTS_GROWTH_FACTOR=1
+export RUBY_HEAP_SLOTS_INCREMENT=250000
+
 # aliases
 alias org='cd ~/code/orgsync/orgsync'
 alias ip='ifconfig | grep "inet " | grep -v 127.0.0.1 | cut -d\  -f2'
