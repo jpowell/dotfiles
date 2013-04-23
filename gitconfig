@@ -1,0 +1,16 @@
+[user]
+  name = Justin Powell
+  email = jpowellcs@gmail.com
+[credential]
+  helper = osxkeychain
+[color]
+  branch = auto
+  status = auto
+  diff = auto
+  ui = auto
+[core]
+  autocrlf = input
+[diff]
+  noprefix = true
+[push]
+  default = simple
