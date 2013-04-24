@@ -44,6 +44,7 @@ export RUBY_HEAP_SLOTS_INCREMENT=250000
 alias org='cd ~/code/orgsync/orgsync'
 alias ip='ifconfig | grep "inet " | grep -v 127.0.0.1 | cut -d\  -f2'
 alias clear_flash='rm -rf ~/Library/Preferences/Macromedia/Flash\ Player/#SharedObjects/*/*;chmod 0500 ~/Library/Preferences/Macromedia/Flash\ Player/#SharedObjects/*;rm -rf ~/Library/Preferences/Macromedia/Flash\ Player/macromedia.com/support/flashplayer/sys/*;chmod 0500 ~/Library/Preferences/Macromedia/Flash\ Player/macromedia.com/support/flashplayer/sys'
+alias be='bundle exec'
 
 # update MAC locate index
 alias update_locate='sudo /usr/libexec/locate.updatedb'
