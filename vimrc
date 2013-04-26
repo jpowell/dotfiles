@@ -131,15 +131,6 @@ autocmd Syntax * call HighlightAnnotations()
 autocmd BufWritePre *.{au3,css,erb,html,js,json,pl,py,rb} call StripWhiteSpace()
 
 " toggle relative line number
-if exists('+relativenumber')
-  autocmd WinLeave *
-        \ if &rnu==1 |
-        \ exe "setl norelativenumber" |
-        \ exe "setl nu" |
-        \ endif
-  autocmd WinEnter *
-        \ if &rnu==0 |
-        \ exe "setl rnu" |
-          \ endif
-endif
+:au FocusLost * :set number
+:au FocusGained * :set relativenumber
 
