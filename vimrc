@@ -101,8 +101,8 @@ call togglebg#map("<F6>")
 let g:ctrlp_working_path_mode = 2
 highlight Pmenu ctermbg=238 gui=bold
 nnoremap <leader>t :CtrlP<cr>
-" ack
-nnoremap <leader>a :Ack<space>
+" ag
+nnoremap <leader>a :Ag<space>
 
 " ** FUNCTIONS **
 function! HighlightAnnotations()
