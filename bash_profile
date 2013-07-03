@@ -81,3 +81,6 @@ gcbr() {
  git checkout -b $1
  git push --set-upstream origin $1
 }
+
+### Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"
