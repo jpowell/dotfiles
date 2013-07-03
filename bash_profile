@@ -2,7 +2,7 @@
 export GREP_OPTIONS='--color=auto'
 
 # For rbenv through Homebrew.
-export RBENV_ROOT=/usr/local/opt/rbenv
+export RBENV_ROOT=/usr/local/var/rbenv
 
 # For rbenv.
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
