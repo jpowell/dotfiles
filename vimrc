@@ -53,7 +53,7 @@ set relativenumber
 " we set winheight to be huge before winminheight, the winminheight
 " set will fail.
 set winwidth=85 winheight=15
-set winminheight=15 winheight=999
+set winminheight=10 winheight=999
 
 " ** SYNTAX **
 syntax enable
