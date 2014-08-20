@@ -136,3 +136,6 @@ autocmd BufWritePre *.{au3,css,erb,html,js,json,pl,py,rb} call StripWhiteSpace()
 :au FocusGained * :set relativenumber
 
 autocmd BufRead *_spec.rb syn keyword rubyRspec describe context it  before after subject its shared_examples shared_context let expect should
+
+" syntastic settings
+let g:syntastic_javascript_checkers = ['jshint']
