@@ -1,15 +1,6 @@
 # Grep options
 export GREP_OPTIONS='--color=auto'
 
-# For rbenv through Homebrew.
-export RBENV_ROOT=/usr/local/var/rbenv
-
-# For rbenv.
-if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
-
-# For nvm
-[[ -s /Users/jpowell/.nvm/nvm.sh ]] && . /Users/jpowell/.nvm/nvm.sh
-
 # For nginx.
 export PATH="/usr/local/sbin:$PATH"
 
@@ -84,3 +75,11 @@ gcbr() {
 
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
+export PATH="$HOME/.rbenv/bin:$PATH"
+
+
+# For rbenv through Homebrew.
+export RBENV_ROOT=/usr/local/var/rbenv
+
+# For rbenv.
+eval "$(rbenv init -)"
