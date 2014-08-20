@@ -10,6 +10,9 @@ export PATH="/usr/local/bin:$PATH"
 # For ~/bin
 export PATH="$HOME/bin:$PATH"
 
+# For SBT
+export SBT_OPTS="-XX:PermSize=256M -XX:MaxPermSize=512M"
+
 # Prompt
 FONT_BOLD='\[\e[1m\]'
 COLOR_ORANGE='\[\e[0;33m\]'
