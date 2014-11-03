@@ -6,10 +6,11 @@ filetype off
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
-Plugin 'gmarik/Vundle.vim'
 Plugin 'altercation/vim-colors-solarized'
-Plugin 'rking/ag.vim'
+Plugin 'gmarik/Vundle.vim'
 Plugin 'kien/ctrlp.vim'
+Plugin 'tpope/vim-surround'
+Plugin 'rking/ag.vim'
 
 call vundle#end()
 filetype plugin indent on
@@ -101,11 +102,10 @@ nnoremap <leader>w <c-w>v
 nnoremap <leader>W <c-w>s
 " resize all windows
 nnoremap <leader>= <c-w>=
-
-" ** PLUGINS **
 " load plugins
 nnoremap <leader>ip :PluginInstall<cr>
 
+" ** PLUGINS **
 " solarized
 call togglebg#map("<F6>")
 " ctrlp
