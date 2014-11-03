@@ -9,7 +9,7 @@ mkdir -p $backup
 cd $dir
 echo "done"
 
-# move any existing dotfiles in homedir to dotfiles_old directory, then create symlinks from the homedir to any files in the ~/dotfiles directory specified in $files
+# move any existing dotfiles in ~ to dotfiles.bak directory, then create symlinks from the homedir to any files in the ~/dotfiles directory specified in $files
 for file in $files; do
     echo "Moving any existing dotfiles from ~ to $backup"
     mv ~/.$file $backup
