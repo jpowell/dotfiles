@@ -1,10 +1,16 @@
 " ** BASIC **
-filetype on " to prevent non-0 exit codes
-filetype off
-filetype plugin indent on
-
-call pathogen#infect()
 set nocompatible
+filetype off
+
+" ** Vundle setup
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+
+Plugin 'gmarik/Vundle.vim'
+Plugin 'altercation/vim-colors-solarized'
+
+call vundle#end()
+filetype plugin indent on
 
 " ** READING FILES **
 set encoding=utf-8
