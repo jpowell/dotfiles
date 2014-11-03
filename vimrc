@@ -8,6 +8,8 @@ call vundle#begin()
 
 Plugin 'gmarik/Vundle.vim'
 Plugin 'altercation/vim-colors-solarized'
+Plugin 'rking/ag.vim'
+Plugin 'kien/ctrlp.vim'
 
 call vundle#end()
 filetype plugin indent on
@@ -101,6 +103,9 @@ nnoremap <leader>W <c-w>s
 nnoremap <leader>= <c-w>=
 
 " ** PLUGINS **
+" load plugins
+nnoremap <leader>ip :PluginInstall<cr>
+
 " solarized
 call togglebg#map("<F6>")
 " ctrlp
