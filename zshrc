@@ -1,6 +1,6 @@
 # ENV variables
 export ZSH=$HOME/.oh-my-zsh
-export PATH="/usr/local/bin:$PATH"
+export PATH="/usr/local/bin:$PATH"      # Homebrew
 export RBENV_ROOT=/usr/local/var/rbenv
 export EDITOR='vim'
 
