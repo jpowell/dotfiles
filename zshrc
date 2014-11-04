@@ -12,8 +12,5 @@ plugins=(git ruby rbenv)
 
 source $ZSH/oh-my-zsh.sh
 
-# Compilation flags
-# export ARCHFLAGS="-arch x86_64"
-
 # INIT
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
