@@ -45,7 +45,7 @@ set visualbell
 set ttyfast " fast moving
 set backspace=indent,eol,start
 set laststatus=2
-set shell=/bin/bash
+set shell=/bin/zsh
 
 " ** APPEARANCE **
 set showmode
