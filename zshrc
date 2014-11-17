@@ -12,5 +12,9 @@ plugins=(git ruby rbenv)
 
 source $ZSH/oh-my-zsh.sh
 
+for file in $HOME/custom_config/*; do
+  source "$file"
+done
+
 # INIT
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
