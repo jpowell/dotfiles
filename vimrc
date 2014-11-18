@@ -9,6 +9,7 @@ call vundle#begin()
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'gmarik/Vundle.vim'
 Plugin 'kien/ctrlp.vim'
+Plugin 'scrooloose/syntastic'
 Plugin 'tpope/vim-bundler'
 Plugin 'tpope/vim-commentary'
 Plugin 'tpope/vim-rails'
