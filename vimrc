@@ -10,8 +10,10 @@ Plugin 'altercation/vim-colors-solarized'
 Plugin 'gmarik/Vundle.vim'
 Plugin 'kien/ctrlp.vim'
 Plugin 'scrooloose/syntastic'
+Plugin 'thoughtbot/vim-rspec'
 Plugin 'tpope/vim-bundler'
 Plugin 'tpope/vim-commentary'
+Plugin 'tpope/vim-dispatch'
 Plugin 'tpope/vim-rails'
 Plugin 'tpope/vim-surround'
 Plugin 'rking/ag.vim'
@@ -118,6 +120,13 @@ highlight Pmenu ctermbg=238 gui=bold
 nnoremap <leader>t :CtrlP<cr>
 " ag
 nnoremap <leader>a :Ag<space>
+" rspec-vim
+let g:rspec_runner = "os_x_iterm"
+let g:rspec_command = "Dispatch rspec {spec}"
+map <Leader>rcs :call RunCurrentSpecFile()<CR>
+map <Leader>rns :call RunNearestSpec()<CR>
+map <Leader>rls :call RunLastSpec()<CR>
+map <Leader>ras :call RunAllSpecs()<CR>
 
 " ** FUNCTIONS **
 function! HighlightAnnotations()
