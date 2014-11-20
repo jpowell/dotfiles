@@ -71,6 +71,9 @@ set relativenumber
 set winwidth=85 winheight=15
 set winminheight=10 winheight=999
 
+" ** Swap files
+set directory=~/.vim/_data/swap
+
 " ** SYNTAX **
 syntax enable
 set background=dark
