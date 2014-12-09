@@ -2,7 +2,7 @@
 
 dir=~/dotfiles                    # dotfiles directory
 backup=~/dotfiles.bak             # old dotfiles backup directory
-files="bashrc vimrc vim zshrc oh-my-zsh gitconfig agrc"
+files="vimrc vim zshrc oh-my-zsh gitconfig agrc"
 
 echo "Creating $backup for backup of any existing dotfiles in ~ and switching into it"
 mkdir -p $backup
