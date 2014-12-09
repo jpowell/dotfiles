@@ -18,3 +18,5 @@ done
 
 # INIT
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
+
+export PATH=".git/safe/../../bin:$PATH"
