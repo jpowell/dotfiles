@@ -8,7 +8,7 @@ export EDITOR='vim'
 # ZSH config
 ZSH_THEME="geoffgarside"
 DISABLE_AUTO_UPDATE="true"
-plugins=(git ruby rbenv)
+plugins=(git ruby rbenv pow)
 
 source $ZSH/oh-my-zsh.sh
 
