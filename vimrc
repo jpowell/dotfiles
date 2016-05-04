@@ -129,7 +129,7 @@ let g:ctrlp_working_path_mode = 2
 highlight Pmenu ctermbg=238 gui=bold
 nnoremap <leader>t :CtrlP<cr>
 " ag
-nnoremap <leader>a :Ag<space>
+nnoremap <leader>a :Ag --silent -Q<space>
 " rspec-vim
 let g:rspec_runner = "os_x_iterm"
 let g:rspec_command = "Dispatch rspec {spec}"
