@@ -118,6 +118,9 @@ nnoremap <leader>= <c-w>=
 " load plugins
 nnoremap <leader>ip :PluginInstall<cr>
 
+" run current ruby file
+nnoremap <leader>rf :!ruby %<cr>
+
 " ** PLUGINS **
 " solarized
 call togglebg#map("<F6>")
