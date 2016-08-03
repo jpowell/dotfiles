@@ -157,6 +157,7 @@ autocmd BufNewFile,BufRead *.jst.eco set ft=eruby.html
 autocmd BufNewFile,BufRead *.json set ft=javascript
 autocmd BufNewFile,BufRead *.es* set ft=javascript
 autocmd BufNewFile,BufRead {Capfile,Gemfile,Rakefile,Guardfile,config.ru,.irbrc} set ft=ruby
+autocmd BufNewFile,BufRead *.less set ft=scss
 autocmd FileType ruby,eruby set omnifunc=rubycomplete#Complete
 autocmd FileType ruby,eruby let g:rubycomplete_buffer_loading = 1
 autocmd FileType ruby,eruby let g:rubycomplete_rails = 1
