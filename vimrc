@@ -127,6 +127,8 @@ nnoremap <leader>rf :!ruby %<cr>
 call togglebg#map("<F6>")
 " ctrlp
 let g:ctrlp_working_path_mode = 2
+let g:ctrlp_max_files = 0
+let g:ctrlp_max_depth = 7
 highlight Pmenu ctermbg=238 gui=bold
 nnoremap <leader>t :CtrlP<cr>
 " ag
