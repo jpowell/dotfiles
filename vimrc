@@ -179,3 +179,7 @@ autocmd BufRead *_spec.rb syn keyword rubyRspec describe context it  before afte
 
 " syntastic settings
 let g:syntastic_javascript_checkers = ['jshint']
+
+" project specific config file setup
+set exrc
+set secure
