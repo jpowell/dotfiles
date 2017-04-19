@@ -18,6 +18,6 @@ done
 
 # INIT
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
-eval "$(docker-machine env dockerhost)"
+eval "$(docker-machine env waterhost)"
 
 export PATH=".git/safe/../../bin:$PATH"
