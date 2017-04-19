@@ -80,10 +80,6 @@ gcbr() {
 export PATH="/usr/local/heroku/bin:$PATH"
 export PATH="$HOME/.rbenv/bin:$PATH"
 
-# Watermark Docker Config
-export WATERMARK_APP_ROOT=~/projects/watermark
-export WATERMARK_DOCKER_ENV=1
-export WATERMARK_DEV_ENV_DOMAIN=".wcc"
 
 # For rbenv through Homebrew.
 export RBENV_ROOT=/usr/local/var/rbenv
