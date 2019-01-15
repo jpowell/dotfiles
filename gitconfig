@@ -1,6 +1,6 @@
 [user]
-  name = Justin Powell
-  email = jpowellcs@gmail.com
+	name = Justin Powell
+	email = jpowellcs@gmail.com
 [credential]
   helper = osxkeychain
 [color]
@@ -14,5 +14,13 @@
   pager = "less -F -X"
 [diff]
   noprefix = true
+	algorithm = patience
 [push]
   default = simple
+[commit]
+	gpgsign = false
+[filter "lfs"]
+	process = git-lfs filter-process
+	required = true
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
