@@ -11,11 +11,13 @@ on run argv
     activate
 
     tell _terminal
-      tell the last session
+      tell the current session
         write text (item 1 of argv)
       end tell
     end tell
   end tell
+
+  delay 0.02
 
   tell application "MacVim"
     activate
