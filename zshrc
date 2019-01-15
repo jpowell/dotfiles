@@ -8,7 +8,7 @@ export EDITOR='vim'
 # ZSH config
 ZSH_THEME="geoffgarside"
 DISABLE_AUTO_UPDATE="true"
-plugins=(git ruby rbenv pow)
+plugins=(git ruby rbenv)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -18,6 +18,6 @@ done
 
 # INIT
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
-eval "$(docker-machine env waterhost)"
 
 export PATH=".git/safe/../../bin:$PATH"
+eval "$(direnv hook zsh)"
