@@ -7,14 +7,20 @@ export EDITOR='vim'
 
 # ZSH config
 ZSH_THEME="geoffgarside"
-DISABLE_AUTO_UPDATE="true"
-plugins=(git ruby rbenv)
+plugins=(
+  git
+  bundler
+  dotenv
+  osx
+  rake
+  rbenv
+  ruby
+  yarn
+  npm
+  node
+)
 
 source $ZSH/oh-my-zsh.sh
-
-for file in $HOME/custom_config/*; do
-  source "$file"
-done
 
 # INIT
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
