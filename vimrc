@@ -187,19 +187,22 @@
   let g:ale_set_balloons = 1
   let g:ale_sign_error = '!!'
   let g:ale_sign_warning = '_!'
+  let g:ale_typescript_tslint_executable = 'tslint'
   let g:ale_typescript_tslint_use_global = 0
   let g:ale_typescript_tslint_config_path = './tslint.json'
-  let g:ale_fixers = {
-        \ '*': ['remove_trailing_lines', 'trim_whitespace'],
-        \ 'ruby': ['rubocop'],
+  let g:ale_linters = {
+        \ 'ruby': ['rubocop', 'ruby'],
         \ 'javascript': ['eslint'],
-        \ 'typescript': ['eslint', 'tslint']
+        \ 'typescript': ['tsserver', 'eslint', 'tslint']
       \}
 
   " -> CTRLP
   let g:ctrlp_working_path_mode = 2
   let g:ctrlp_max_files = 0
-  let g:ctrlp_max_depth = 10
+  let g:ctrlp_max_depth = 8
+  if executable('ag')
+    let g:ctrlp_user_command = 'ag %s -l --nocolor --hidden -g ""'
+  endif
   highlight Pmenu ctermbg=238 gui=bold
   nnoremap <leader>t :CtrlP<cr>
 
