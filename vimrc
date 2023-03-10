@@ -5,8 +5,8 @@
 
 " ------------ <PLUGIN INSTALL> ------------------
   " -> VUNDLE SETUP
-  set rtp+=~/.vim/bundle/Vundle.vim
-  call vundle#begin()
+  set rtp+=~/.vundle/Vundle.vim
+  call vundle#begin('~/.vundle')
   Plugin 'gmarik/Vundle.vim'
 
   " -> APPEARANCE
