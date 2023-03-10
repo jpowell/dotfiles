@@ -11,6 +11,9 @@ DISABLE_AUTO_UPDATE="true"
 plugins=(git ruby rbenv)
 
 source $ZSH/oh-my-zsh.sh
+if [[ -d $HOME/custom_config ]]; then
+  for f in $HOME/custom_config/*; do source $f; done
+fi
 
 # INIT
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
