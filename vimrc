@@ -20,6 +20,7 @@
   Plugin 'ngmy/vim-rubocop'
   Plugin 'w0rp/ale.git'
   Plugin 'zpieslak/vim-autofix.git'
+  Plugin 'github/copilot.vim'
 
   " -> Testing
   Plugin 'junegunn/vader.vim'
@@ -211,7 +212,7 @@
 
   " -> RSPEC-VIM
   let g:rspec_runner = "os_x_iterm"
-  let g:rspec_command = ":!./bin/rspec {spec}"
+  let g:rspec_command = ":!docker compose run web ./bin/rspec {spec}"
   map <Leader>rcs :call RunCurrentSpecFile()<CR>
   map <Leader>rns :call RunNearestSpec()<CR>
   map <Leader>rls :call RunLastSpec()<CR>
