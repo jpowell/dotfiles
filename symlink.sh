@@ -4,6 +4,19 @@ dir=~/dotfiles                    # dotfiles directory
 backup=~/dotfiles.bak             # old dotfiles backup directory
 files="vimrc vim bashrc zshrc oh-my-zsh gitconfig agrc"
 
+# Neovim config (goes in ~/.config/nvim, not ~/.<name>)
+mkdir -p ~/.config
+if [ ! -L ~/.config/nvim ]; then
+  if [ -e ~/.config/nvim ]; then
+    echo "Backing up existing ~/.config/nvim to $backup"
+    mv ~/.config/nvim "$backup/"
+  fi
+  echo "Creating symlink for nvim config"
+  ln -s "$dir/nvim" ~/.config/nvim
+else
+  echo "~/.config/nvim is already a symlink. Keeping it."
+fi
+
 echo "Creating $backup for backup of any existing dotfiles in ~ and switching into it"
 mkdir -p $backup
 cd $dir
