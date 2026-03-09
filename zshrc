@@ -13,6 +13,10 @@ source $ZSH/oh-my-zsh.sh
 export PATH="/opt/homebrew/bin:$PATH"
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
+# Postgres
+export PATH="/opt/homebrew/opt/postgresql@16/bin:$PATH"
+
+
 # nvm
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
@@ -27,7 +31,7 @@ eval "$(direnv hook zsh)"
 # Custom Configs / Init
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
-export PATH="$HOME/bin:.git/safe/../../bin:$PATH"
+export PATH="$HOME/.local/bin:$HOME/bin:.git/safe/../../bin:$PATH"
 
 if [[ -d $HOME/custom_config ]]; then
   for f in $HOME/custom_config/*; do source $f; done
