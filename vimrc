@@ -5,12 +5,12 @@
 
 " ------------ <PLUGIN INSTALL> ------------------
   " -> VUNDLE SETUP
-  set rtp+=~/.vundle/Vundle.vim
-  call vundle#begin('~/.vundle')
-  Plugin 'gmarik/Vundle.vim'
+  set rtp+=~/.vim/bundle/Vundle.vim
+  call vundle#begin()
+  Plugin 'VundleVim/Vundle.vim'
 
   " -> APPEARANCE
-  Plugin 'altercation/vim-colors-solarized'
+  Plugin 'catppuccin/vim', {'name': 'catppuccin'}
   Plugin 'vim-airline/vim-airline'
   Plugin 'vim-airline/vim-airline-themes'
 
@@ -90,7 +90,7 @@
   set showmode
   set showcmd
   set hidden
-  set cursorline cursorcolumn
+  " set cursorline cursorcolumn
   set wildmenu
   set wildmode=list:longest
   set ruler
@@ -117,8 +117,7 @@
   " -> SYNTAX
   syntax enable
   set background=dark
-  let g:solarized_visibility='low'
-  colorscheme solarized
+  colorscheme catppuccin_mocha
 " ------------ </BASIC CONFIG> -------------------
 
 " ------------ <BASIC MAPPINGS> ------------------
@@ -169,7 +168,7 @@
   nnoremap <leader>a :Ag --silent -Q<space>
 
   " -> AIRLINE
-  let g:airline_solarized_bg='dark'
+  let g:airline_theme = 'catppuccin_mocha'
   let g:airline_powerline_fonts = 1
   if !exists('g:airline_symbols')
     let g:airline_symbols = {}
@@ -208,7 +207,7 @@
   nnoremap <leader>t :CtrlP<cr>
 
   " -> FUGITIVE
-  nnoremap <leader>gs :Gstatus<CR>
+  nnoremap <leader>gs :Git<CR>
 
   " -> RSPEC-VIM
   let g:rspec_runner = "os_x_iterm"
@@ -218,8 +217,6 @@
   map <Leader>rls :call RunLastSpec()<CR>
   map <Leader>ras :call RunAllSpecs()<CR>
 
-  " -> SOLARIZED
-  call togglebg#map("<F6>")
 " ------------ </PLUGIN CONFIG> ------------------
 
 " ------------ </FUNCTIONS> ----------------------
